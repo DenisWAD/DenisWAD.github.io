@@ -1,0 +1,121 @@
+/* Media Queries */
+@media(max-width: 749px) {
+    .inner_box {
+        border: 1px solid black;
+        width: 100%;
+        padding: 25px;
+        background-color: white;
+    }
+}
+
+@media(min-width: 750px) {
+    #container {
+        text-align: center;
+        display:flex;
+        justify-content: space-between;    
+    }
+
+    .inner_box {
+        border: 1px solid black;
+        width: 30%;
+        padding: 15px;
+        background-color: white;
+    }
+}
+
+/* Universal settings */
+body {
+    background-color: antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(66, 76, 86);
+}
+
+#container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#nav_bar ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 25px;
+    background-color: black;
+    overflow: hidden;
+    color: beige;
+}
+
+#nav_bar li {
+    float: left;
+}
+
+#nav_bar a {
+    padding: 25px; 
+    color: aliceblue;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.heading {
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+/* Specific sections */
+#skills_section li {
+    list-style: square;
+
+}
+
+#home_nav ul {
+    list-style: none;
+}
+
+#education_section {
+    /* flex: 1; */
+    order: 1;
+}
+
+#experience_section {
+    /* flex: 2; */
+    order: 2;
+}
+
+#skills_section {
+    /* flex: 1; */
+    order: 3;
+}
+
+
+/* Cover Letter */
+#letter {
+    border: 1px black solid;
+    background-color: white;
+    height: 1000px;
+    width: 80%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+}
+
+#letter img {
+    height: 300px;
+    border: 1px black solid;
+    float: right;
+    margin: 0 40px 40px 40px;
+}
+
+#letter p {
+    padding: 2% 10% 2% 10%;
+}
+
+.signature {
+    font-size: xx-large;
+    font-style: oblique;
+}
