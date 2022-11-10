@@ -1,5 +1,5 @@
 /* Media Queries */
-@media(max-width: 749px) {
+/* @media(max-width: 749px) {
     .inner_box {
         border: 1px solid black;
         width: 100%;
@@ -21,7 +21,7 @@
         padding: 15px;
         background-color: white;
     }
-}
+} */
 
 /* Universal settings */
 body {
@@ -35,6 +35,34 @@ body {
     width: 90%;
 }
 
+.row {
+    justify-content: space-around;
+}
+
+
+h1, h2, h3 {
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.heading {
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+.inner_box {
+    border: 1px solid black;
+    /* width: 100%; */
+    padding: 25px;
+    background-color: white;
+}
+
+
+/* Nav bar */
 #nav_bar ul {
     list-style: none;
     margin: 0 0 20px 0;
@@ -54,21 +82,8 @@ body {
     text-decoration: none;
 }
 
-h1, h2, h3 {
-    text-shadow: 1px 1px rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-}
 
-h2 {
-    text-decoration: underline;
-}
-
-.heading {
-    font-weight: bold;
-    font-family: helvetica;
-}
-
-/* Specific sections */
+/* Index Page sections */
 #skills_section li {
     list-style: square;
 
@@ -94,7 +109,21 @@ h2 {
 }
 
 
-/* Cover Letter */
+/* Cover Letter Page*/
+@media(min-width: 992px) {
+    #letter img {
+        height: 300px;
+        border: 1px black solid;
+        float: right;
+        margin: 0 40px 40px 40px;
+    }
+}
+
+@media(max-width: 991px) {
+    #letter img{
+        display: none;
+    }
+}
 #letter {
     border: 1px black solid;
     background-color: white;
@@ -104,12 +133,7 @@ h2 {
     margin: 0 auto;
 }
 
-#letter img {
-    height: 300px;
-    border: 1px black solid;
-    float: right;
-    margin: 0 40px 40px 40px;
-}
+
 
 #letter p {
     padding: 2% 10% 2% 10%;
